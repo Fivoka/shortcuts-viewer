@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "901ad92dc905849a",
+        "id": "ed92e7c609ce42a3",
         "type": "tabs",
         "children": [
           {
-            "id": "a4bb20cdb3933719",
+            "id": "53f0e9d8b1457d59",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Notes/usage goals.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "usage goals"
+            }
+          },
+          {
+            "id": "441413c890ab563b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/json files.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "json files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Notes/whats makes a shortcut.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for whats makes a shortcut"
             }
           },
           {
@@ -108,11 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Notes/whats makes a shortcut.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from whats makes a shortcut"
             }
           },
           {
@@ -136,12 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Notes/whats makes a shortcut.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of whats makes a shortcut"
             }
           }
         ]
@@ -161,6 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a4bb20cdb3933719",
-  "lastOpenFiles": []
+  "active": "441413c890ab563b",
+  "lastOpenFiles": [
+    "Notes/sketches/wirefram.png",
+    "Notes/json files.md",
+    "Notes/usage goals.md",
+    "Notes/Images/keycodes.png",
+    "Notes/Images/actions.png",
+    "Notes/modifiers.md",
+    "Notes/triggers.md",
+    "Notes/sources.md",
+    "Notes/sketches/sketch.png",
+    "Notes/whats makes a shortcut.md",
+    "Notes/Images/scene SC on global SC.png",
+    "Notes/conditions.md",
+    "Untitled.md",
+    "Notes/sketches",
+    "Notes/sketches.md",
+    "Notes/Images",
+    "Notes",
+    "index.html",
+    "README.md"
+  ]
 }
