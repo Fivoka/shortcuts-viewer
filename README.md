@@ -1,5 +1,5 @@
-# data-driven-shortcuts
-work in progress sorry
+# shortcuts viewer
+this is a work in progress sorry
 
 ## usage goals
 a document to visit when u need to see a list of some program/editor's available shortcuts
