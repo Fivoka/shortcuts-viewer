@@ -1,0 +1,140 @@
+/* Keyboard & mouse display */
+#keyboardMouseDisplay {
+    position: relative;
+    top: 25px;
+    width: fit-content;
+    height: fit-content;
+
+    display: grid;
+    grid-template-areas:
+        "func nav .      ."
+        "main nav numpad mouse";
+}
+
+/* Display area */
+.displayArea {
+    padding: var(--display-area-padding);
+}
+
+/* Default key & row properties */
+.displayInput {
+    --key-inner-side-length: calc(var(--key-side-length) - var(--key-border-width) * 2);
+
+    width: var(calc(var(--key-side-length) - var(--key-border-width) * 2));
+    height: var(calc(var(--key-side-length) - var(--key-border-width) * 2));
+    border-width: var(--key-border-width);
+}
+
+.displayRow {
+    width: 100%;
+    height: var(--key-side-length);
+    display: grid;
+    gap: var(--key-gap);
+    margin-bottom: var(--key-gap);
+}
+
+
+/* Main keys */
+#mainKeys {
+    grid-area: main;
+    width: calc(var(--key-side-length) * 15 + var(--key-gap) * 14);
+}
+
+#mainKeys .displayRow:nth-child(1) { grid-template-columns: repeat(13, var(--key-side-length)) 1fr; }
+#mainKeys .displayRow:nth-child(2) { grid-template-columns: 1fr repeat(12, var(--key-side-length)) 1fr; }
+#mainKeys .displayRow:nth-child(3) { grid-template-columns: 7fr repeat(11, var(--key-side-length)) 9fr; }
+#mainKeys .displayRow:nth-child(4) { grid-template-columns: 9fr repeat(10, var(--key-side-length)) 11fr; }
+#mainKeys .displayRow:nth-child(5) { grid-template-columns: 15fr 12fr 12fr 60fr 12fr 12fr 12fr 15fr;
+    margin: 0;
+}
+
+#keycode_8, 
+#keycode_9, #keycode_220, 
+#keycode_20, #keycode_13a, 
+#keycode_16a, #keycode_16b, 
+#keycode_17a, #keycode_91, #keycode_18a, #keycode_32, #keycode_18b, #keycode_92, #keycode_93, #keycode_17b {
+    width: initial;
+}
+
+
+/* Function keys */
+#functionKeys {
+    grid-area: func;
+    margin-bottom: var(--display-area-gap);
+    width: calc(var(--key-side-length) * 15 + var(--key-gap) * 14);
+}
+
+#functionKeys .displayRow {
+    grid-template-columns:
+        var(--key-side-length)
+        1fr repeat(4, var(--key-side-length))
+        1fr repeat(4, var(--key-side-length))
+        1fr repeat(4, var(--key-side-length));
+
+    margin: 0;
+}
+
+
+/* Navigation keys */
+#navigationKeys {
+    grid-area: nav;
+    margin-left: var(--display-area-gap);
+}
+
+#navigationKeys .displayRow { grid-template-columns: repeat(3, var(--key-side-length)); }
+
+#navigationKeys .displayRow { margin-bottom: var(--key-gap); }
+#navigationKeys .displayRow:first-child { margin-bottom: calc(var(--display-area-gap) + var(--display-area-padding) * 2); }
+#navigationKeys .displayRow:last-child { margin: 0; }
+
+
+/* Numpad keys */
+#numpadKeys {
+    grid-area: numpad;
+    margin-left: var(--display-area-gap);
+
+    display: grid;
+    grid-template-areas:
+        "nl sl st mi"
+        "n7 n8 n9 pl"
+        "n4 n5 n6 pl"
+        "n1 n2 n3 en"
+        "n0 n0 pe en";
+    grid-template-rows: repeat(5, var(--key-side-length));
+    grid-template-columns: repeat(4, var(--key-side-length));
+    gap: var(--key-gap);
+}
+
+#keycode_96 { grid-area: n0; }
+#keycode_97 { grid-area: n1; }
+#keycode_98 { grid-area: n2; }
+#keycode_99 { grid-area: n3; }
+#keycode_100 { grid-area: n4; }
+#keycode_101 { grid-area: n5; }
+#keycode_102 { grid-area: n6; }
+#keycode_103 { grid-area: n7; }
+#keycode_104 { grid-area: n8; }
+#keycode_105 { grid-area: n9; }
+#keycode_144 { grid-area: nl; }
+#keycode_111 { grid-area: sl; }
+#keycode_106 { grid-area: st; }
+#keycode_109 { grid-area: mi; }
+#keycode_107 { grid-area: pl; }
+#keycode_13b { grid-area: en; }
+#keycode_110 { grid-area: pe; }
+
+#numpadKeys * {
+    width: initial;
+    height: initial;
+}
+
+
+/* Mouse inputs */
+#mouseInputs {
+    grid-area: mouse;
+    margin-left: var(--display-area-gap);
+}
+
+#mouseInputs .displayRow { grid-template-columns: repeat(3, var(--key-side-length)); }
+
+#mouseInputs .displayRow:last-child { margin: 0; }

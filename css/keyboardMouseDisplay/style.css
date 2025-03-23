@@ -1,0 +1,57 @@
+/* Display styling */
+
+/* Keyboard & mouse display */
+#keyboardMouseDisplay {
+    --key-side-length: 30px;
+    --key-gap: 2px;
+
+    --display-area-gap: 10px;
+    --display-area-padding: 10px;
+
+    border: solid 1px black;
+}
+
+/* Display area */
+.displayArea { background-color: antiquewhite; }
+
+
+/* Default key styling */
+.displayInput {
+    --key-border-width: 3px;
+    border-style: solid;
+}
+
+.triggerInput {
+    border-color: rgb(31, 21, 119);
+    background-color: royalblue;
+}
+
+.modifierKey {
+    border-color: rgb(146, 39, 66);
+    background-color: rgb(230, 87, 122);
+}
+
+.unavailableKey {
+    border-color: rgb(71, 71, 71);
+    background-color: gray;
+}
+
+
+/* On hover key styling */
+.displayInput:hover {
+    border-style: dashed;
+}
+
+.triggerInput:hover {
+    border-color: royalblue;
+    background-color: rgb(31, 21, 119);
+}
+
+.modifierKey:hover {
+    border-color: rgb(146, 103, 39);
+    background-color: rgb(230, 180, 87);
+}
+
+.unavailableKey:hover {
+    border-style: solid;
+}

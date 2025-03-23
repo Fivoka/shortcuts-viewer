@@ -4,14 +4,18 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/keyboardMouseDisplay/layout.css">
+        <link rel="stylesheet" href="css/keyboardMouseDisplay/style.css">
+
         <script src="js/script.js" defer></script>
     </head>
 
     <body>
         <div id="keyboardMouseDisplay">
             <!-- Main keys -->
-            <div id="mainKeys">
+            <div id="mainKeys" class="displayArea">
                 <!-- Row 1 -->
                 <div class="displayRow">
                     <div id="keycode_192" class="displayInput triggerInput"></div>
@@ -100,20 +104,20 @@
             </div>
 
             <!-- Function keys -->
-            <div id="functionKeys">
+            <div id="functionKeys" class="displayArea">
                 <div class="displayRow">
                     <div id="keycode_27" class="displayInput triggerInput"></div>
-
+                    <div class="keySpacing"></div>
                     <div id="keycode_112" class="displayInput triggerInput"></div>
                     <div id="keycode_113" class="displayInput triggerInput"></div>
                     <div id="keycode_114" class="displayInput triggerInput"></div>
                     <div id="keycode_115" class="displayInput triggerInput"></div>
-
+                    <div class="keySpacing"></div>
                     <div id="keycode_116" class="displayInput triggerInput"></div>
                     <div id="keycode_117" class="displayInput triggerInput"></div>
                     <div id="keycode_118" class="displayInput triggerInput"></div>
                     <div id="keycode_119" class="displayInput triggerInput"></div>
-
+                    <div class="keySpacing"></div>
                     <div id="keycode_120" class="displayInput triggerInput"></div>
                     <div id="keycode_121" class="displayInput triggerInput"></div>
                     <div id="keycode_122" class="displayInput triggerInput"></div>
@@ -122,7 +126,7 @@
             </div>
 
             <!-- Navigation keys -->
-            <div id="navigationKeys">
+            <div id="navigationKeys" class="displayArea">
                 <!-- Top keys -->
                 <div class="displayRow">
                     <div id="keycode_44" class="displayInput triggerInput"></div>
@@ -145,6 +149,7 @@
                 </div>
                 <!-- Arrow keys -->
                 <div class="displayRow">
+                    <div class="keySpacing"></div>
                     <div id="keycode_38" class="displayInput triggerInput"></div>
                 </div>
                 <div class="displayRow">
@@ -155,7 +160,7 @@
             </div>
 
             <!-- Numpad keys -->
-            <div id="numpadKeys">
+            <div id="numpadKeys" class="displayArea">
                 <!-- Numbers -->
                 <div id="keycode_96" class="displayInput triggerInput"></div>
                 <div id="keycode_97" class="displayInput triggerInput"></div>
@@ -178,9 +183,10 @@
             </div>
 
             <!-- Mouse inputs -->
-            <div id="mouseInputs">
+            <div id="mouseInputs" class="displayArea">
                 <!-- Wheel up -->
                 <div class="displayRow">
+                    <div class="keySpacing"></div>
                     <div id="mouseWheelUp" class="displayInput triggerInput"></div>
                 </div>
                 <!-- Left / Middle / Right -->
@@ -191,16 +197,20 @@
                 </div>
                 <!-- Wheel down -->
                 <div class="displayRow">
+                    <div class="keySpacing"></div>
                     <div id="mouseWheelDown" class="displayInput triggerInput"></div>
                 </div>
-                <!-- Empty row -->
-                <div class="displayRow">
-                </div>
-                <!-- Buttons 4 / 5 / 6 -->
+                <!-- Buttons 4 / 8 -->
                 <div class="displayRow">
                     <div id="mouseButton4" class="displayInput triggerInput"></div>
+                    <div class="keySpacing"></div>
+                    <div id="mouseButton8" class="displayInput triggerInput"></div>
+                </div>
+                <!-- Buttons 5 / 6 / 7 -->
+                <div class="displayRow">
                     <div id="mouseButton5" class="displayInput triggerInput"></div>
                     <div id="mouseButton6" class="displayInput triggerInput"></div>
+                    <div id="mouseButton7" class="displayInput triggerInput"></div>
                 </div>
             </div>
         </div>
