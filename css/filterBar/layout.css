@@ -1,0 +1,39 @@
+/* Temp */
+#filterBar div:nth-child(even) { background-color: #0002; }
+#filterBar div:nth-child(odd) { background-color: #fff2; }
+
+#filterBar:hover {
+    opacity: 80%;
+}
+
+
+/* Filter icon */
+#filterIcon {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+/* Shortcut filter & description columns*/
+#filterBarToggleModifier {
+    width: 80px;
+}
+
+#filterBarModifierCombination {
+    width: 100px;
+}
+
+#filterBarTrigger {
+    width: 100px;
+}
+
+#filterBarStateCondition {
+    flex: 1;
+}
+
+#filterBarLowCondition {
+    flex: 1;
+}
+
+#filterBarDescription {
+    flex: 1;
+}

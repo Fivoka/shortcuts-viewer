@@ -9,3 +9,5 @@ for when youre asking yourself questions like these:
 - how do i see shortcuts with multiple modifier combinations at once
 - what shortcuts can i use while hovering over this element
 - etc..
+
+(im working with osu!lazer shortcuts for the examples on the page)

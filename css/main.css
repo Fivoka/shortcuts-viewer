@@ -35,13 +35,13 @@ body {
 /* Right side */
 #rightHalf {
     flex: 1;
-
     display: flex;
     flex-direction: column;
 }
 
-#searchBar {
+#filterBar {
     height: 35px;
+    display: flex;
     background-color: lightsteelblue;
 }
 

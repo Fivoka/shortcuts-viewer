@@ -5,9 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Styling -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- Keyboard & mouse display -->
         <link rel="stylesheet" href="css/keyboardMouseDisplay/layout.css">
         <link rel="stylesheet" href="css/keyboardMouseDisplay/style.css">
+        <!-- Filter bar -->
+        <link rel="stylesheet" href="css/filterBar/layout.css">
+        <!-- Shortcuts list -->
+        <link rel="stylesheet" href="css/shortcutsList/layout.css">
 
         <script src="js/script.js" defer></script>
     </head>
@@ -217,13 +223,64 @@
                     </div>
                 </div>
             </section>
+
             <section id="displaySettings">
             </section>
         </div>
+
         <div id="rightHalf">
-            <section id="searchBar">
+            <section id="filterBar">
+                <div id="filterIcon"></div>
+                <div id="filterBarToggleModifier" class="shortcutsFilter">
+                    Toggle modifer
+                </div>
+                <div id="filterBarModifierCombination" class="shortcutsFilter">
+                    Modifier combination
+                </div>
+                <div id="filterBarTrigger" class="shortcutsFilter">
+                    Trigger input
+                </div>
+                <div id="filterBarStateCondition" class="shortcutsFilter">
+                    State condition(s)
+                </div>
+                <div id="filterBarLowCondition" class="shortcutsFilter">
+                    Low condition(s)
+                </div>
+                <div id="filterBarDescription" class="shortcutsFilter">
+                    Description
+                </div>
             </section>
+
             <section id="shortcutsList">
+                <table id="shortcutsListTable">
+                    <tr>
+                        <th>1</th>
+                        <td>None</td>
+                        <td>Ctrl</td>
+                        <td>R</td>
+                        <td>scene:standard_gameplay</td>
+                        <td></td>
+                        <td>restarts current map</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>None</td>
+                        <td>Alt</td>
+                        <td>Scroll up</td>
+                        <td>scene:standard_editor, standard_editor_tab:compose</td>
+                        <td>hovering:playfield</td>
+                        <td>increases distance snap</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>None</td>
+                        <td>Shift</td>
+                        <td>Middle click</td>
+                        <td>scene:standard_editor, standard_editor_tab:compose, compose_mode:placement</td>
+                        <td>hovering:gameplay_object</td>
+                        <td>deletes an objects</td>
+                    </tr>
+                </table>
             </section>
         </div>
     </body>
