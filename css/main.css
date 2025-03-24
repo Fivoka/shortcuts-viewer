@@ -4,5 +4,48 @@ body {
     margin: 0;
 
     display: flex;
+}
+
+
+/* Left side */
+#leftHalf {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#keyboardMouseDisplaySection {
+    height: fit-content;
+    padding: 15px;
+
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    background-color: lightpink;
+}
+
+#displaySettings {
+    flex: 1;
+    background-color: aquamarine;
+}
+
+
+/* Right side */
+#rightHalf {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#searchBar {
+    height: 35px;
+    background-color: lightsteelblue;
+}
+
+#shortcutsList {
+    flex: 1;
+    background-color: lightgreen;
 }

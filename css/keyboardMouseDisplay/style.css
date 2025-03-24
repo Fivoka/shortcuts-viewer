@@ -1,23 +1,29 @@
+/* Temp */
+#functionKeys, #numpadKeys { opacity: 25%; }
+
+
 /* Display styling */
 
 /* Keyboard & mouse display */
 #keyboardMouseDisplay {
-    --key-side-length: 30px;
-    --key-gap: 2px;
+    --key-side-length: 25px;
+    --key-gap: 0px;
 
-    --display-area-gap: 10px;
-    --display-area-padding: 10px;
-
-    border: solid 1px black;
+    --display-area-gap: 8px;
+    --display-area-padding: 5px;
 }
 
 /* Display area */
 .displayArea { background-color: antiquewhite; }
+#mouseInputs {
+    border-top-left-radius: var(--key-side-length);
+    border-top-right-radius: var(--key-side-length);
+}
 
 
 /* Default key styling */
 .displayInput {
-    --key-border-width: 3px;
+    --key-border-width: 1px;
     border-style: solid;
 }
 
@@ -38,20 +44,14 @@
 
 
 /* On hover key styling */
-.displayInput:hover {
-    border-style: dashed;
-}
-
 .triggerInput:hover {
+    border-style: dashed;
     border-color: royalblue;
     background-color: rgb(31, 21, 119);
 }
 
 .modifierKey:hover {
+    border-style: dashed;
     border-color: rgb(146, 103, 39);
     background-color: rgb(230, 180, 87);
-}
-
-.unavailableKey:hover {
-    border-style: solid;
 }

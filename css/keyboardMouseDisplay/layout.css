@@ -1,10 +1,5 @@
 /* Keyboard & mouse display */
 #keyboardMouseDisplay {
-    position: relative;
-    top: 25px;
-    width: fit-content;
-    height: fit-content;
-
     display: grid;
     grid-template-areas:
         "func nav .      ."
