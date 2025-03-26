@@ -2,7 +2,7 @@
 #filterBar, tr {
     display: grid;
     grid-template-areas: "a b c d e f g";
-    grid-template-columns: 35px 80px 100px 100px 1fr 1fr 1fr;
+    grid-template-columns: 35px 4fr 5fr 5fr 10fr 10fr 10fr;
 }
 
 .shortcutsFilter, td {
