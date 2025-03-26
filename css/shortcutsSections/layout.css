@@ -1,0 +1,41 @@
+/* Filter bar & shortcuts list */
+#filterBar, tr {
+    display: grid;
+    grid-template-areas: "a b c d e f g";
+    grid-template-columns: 35px 80px 100px 100px 1fr 1fr 1fr;
+}
+
+.shortcutsFilter, td {
+    padding: 5px;
+    border-left: solid 1px #555;
+    overflow: hidden;
+}
+
+
+/* Filter bar */
+#filterIcon {
+    background-color: #a777e6;
+}
+
+
+/* Shortcuts list */
+table {
+    border-spacing: 0;
+}
+
+table * {
+    padding: 0;
+    background-color: #222;
+    color: whitesmoke;
+}
+
+tr {
+    height: fit-content;
+    border-bottom: solid 1px whitesmoke;
+}
+
+td {
+    padding: 5px;
+    border-left: solid 1px #555;
+    overflow: hidden;
+}

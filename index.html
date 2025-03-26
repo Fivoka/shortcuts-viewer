@@ -10,16 +10,14 @@
         <!-- Keyboard & mouse display -->
         <link rel="stylesheet" href="css/keyboardMouseDisplay/layout.css">
         <link rel="stylesheet" href="css/keyboardMouseDisplay/style.css">
-        <!-- Filter bar -->
-        <link rel="stylesheet" href="css/filterBar/layout.css">
-        <!-- Shortcuts list -->
-        <link rel="stylesheet" href="css/shortcutsList/layout.css">
+        <!-- Filter bar & shortcuts list -->
+        <link rel="stylesheet" href="css/shortcutsSections/layout.css">
 
         <script src="js/script.js" defer></script>
     </head>
 
     <body>
-        <div id="leftHalf">
+        <div id="displaySections">
             <section id="keyboardMouseDisplaySection">
                 <div id="keyboardMouseDisplay">
                     <!-- Main keys -->
@@ -228,7 +226,7 @@
             </section>
         </div>
 
-        <div id="rightHalf">
+        <div id="shortcutsSections">
             <section id="filterBar">
                 <div id="filterIcon"></div>
                 <div id="filterBarToggleModifier" class="shortcutsFilter">
@@ -259,14 +257,14 @@
                         <td>Ctrl</td>
                         <td>R</td>
                         <td>scene:standard_gameplay</td>
-                        <td></td>
+                        <td>None</td>
                         <td>restarts current map</td>
                     </tr>
                     <tr>
                         <th>2</th>
                         <td>None</td>
                         <td>Alt</td>
-                        <td>Scroll up</td>
+                        <td>Whl. Up</td>
                         <td>scene:standard_editor, standard_editor_tab:compose</td>
                         <td>hovering:playfield</td>
                         <td>increases distance snap</td>
@@ -275,10 +273,10 @@
                         <th>3</th>
                         <td>None</td>
                         <td>Shift</td>
-                        <td>Middle click</td>
+                        <td>M2</td>
                         <td>scene:standard_editor, standard_editor_tab:compose, compose_mode:placement</td>
                         <td>hovering:gameplay_object</td>
-                        <td>deletes an objects</td>
+                        <td>deletes selected objects</td>
                     </tr>
                 </table>
             </section>

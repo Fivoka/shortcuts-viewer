@@ -7,8 +7,8 @@ body {
 }
 
 
-/* Left side */
-#leftHalf {
+/* Display & settings */
+#displaySections {
     width: fit-content;
 
     display: flex;
@@ -32,15 +32,14 @@ body {
 }
 
 
-/* Right side */
-#rightHalf {
+/* Filters & shortcuts list */
+#shortcutsSections {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 #filterBar {
-    height: 35px;
     display: flex;
     background-color: lightsteelblue;
 }
