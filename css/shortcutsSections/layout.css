@@ -1,5 +1,5 @@
 /* Filter bar & shortcuts list */
-#filterBar, tr {
+#filterBarSection, tr {
     display: grid;
     grid-template-areas: "a b c d e f g";
     grid-template-columns: 35px 4fr 5fr 5fr 10fr 10fr 10fr;
@@ -21,10 +21,10 @@
 /* Shortcuts list */
 table {
     border-spacing: 0;
+    width: 100%;
 }
 
 table * {
-    padding: 0;
     background-color: #222;
     color: whitesmoke;
 }
@@ -35,7 +35,5 @@ tr {
 }
 
 td {
-    padding: 5px;
-    border-left: solid 1px #555;
-    overflow: hidden;
+    white-space: pre-line;
 }

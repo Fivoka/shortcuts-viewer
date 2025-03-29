@@ -26,7 +26,7 @@ body {
     background-color: lightpink;
 }
 
-#displaySettings {
+#displaySettingsSection {
     flex: 1;
     background-color: aquamarine;
 }
@@ -39,12 +39,12 @@ body {
     flex-direction: column;
 }
 
-#filterBar {
+#filterBarSection {
     display: flex;
     background-color: lightsteelblue;
 }
 
-#shortcutsList {
+#shortcutsListSection {
     flex: 1;
     background-color: lightgreen;
 }

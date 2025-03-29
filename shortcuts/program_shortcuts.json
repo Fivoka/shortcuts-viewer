@@ -1,0 +1,35 @@
+{
+    "shortcuts": [
+        {
+            "toggle_modifier": {
+                "held_modifiers": [ "Ctrl" ],
+                "trigger_input": "75"
+            },
+            "held_modifiers": [ "Ctrl", "Shift", "Alt" ],
+            "trigger_input": "82",
+            "state_conditions": [
+                "scene:scene1",
+                "tab:tab3",
+                "mode:mode2"
+            ],
+            "low_conditions": [
+                "hovering:element1",
+                "not_hovering:element5"
+            ],
+            "description": "shortcuts that does a thing"
+        },
+        {
+            "toggle_modifier": null,
+            "held_modifiers": [ "Ctrl", "Alt" ],
+            "trigger_input": "65",
+            "state_conditions": [
+                "scene:scene5",
+                "mode:mode1"
+            ],
+            "low_conditions": [
+                "selecting:element_type"
+            ],
+            "description": "shortcuts that does a thing 2"
+        }
+    ] 
+}

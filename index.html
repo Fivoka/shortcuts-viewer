@@ -15,7 +15,7 @@
         <!-- Dynamic layout -->
         <link rel="stylesheet" href="css/dynamicLayout.css">
 
-        <script src="js/script.js" defer></script>
+        <script src="js/shortcutsHandler.js" defer></script>
     </head>
 
     <body>
@@ -224,18 +224,18 @@
                 </div>
             </section>
 
-            <section id="displaySettings">
+            <section id="displaySettingsSection">
             </section>
         </div>
 
         <div id="shortcutsSections">
-            <section id="filterBar">
+            <section id="filterBarSection">
                 <div id="filterIcon"></div>
                 <div id="filterBarToggleModifier" class="shortcutsFilter">
-                    Toggle modifer
+                    Toggle modifier
                 </div>
                 <div id="filterBarModifierCombination" class="shortcutsFilter">
-                    Modifier combination
+                    Held modifier
                 </div>
                 <div id="filterBarTrigger" class="shortcutsFilter">
                     Trigger input
@@ -251,9 +251,9 @@
                 </div>
             </section>
 
-            <section id="shortcutsList">
-                <table id="shortcutsListTable">
-                    <tr>
+            <section id="shortcutsListSection">
+                <table id="shortcutsList">
+                    <!-- <tr>
                         <th>1</th>
                         <td>None</td>
                         <td>Ctrl</td>
@@ -267,7 +267,7 @@
                         <td>None</td>
                         <td>Alt</td>
                         <td>Whl. Up</td>
-                        <td>scene:standard_editor, standard_editor_tab:compose</td>
+                        <td>scene:standard_editor standard_editor_tab:compose</td>
                         <td>hovering:playfield</td>
                         <td>increases distance snap</td>
                     </tr>
@@ -276,10 +276,10 @@
                         <td>None</td>
                         <td>Shift</td>
                         <td>M2</td>
-                        <td>scene:standard_editor, standard_editor_tab:compose, compose_mode:placement</td>
+                        <td>scene:standard_editor standard_editor_tab:compose compose_mode:placement</td>
                         <td>hovering:gameplay_object</td>
                         <td>deletes selected objects</td>
-                    </tr>
+                    </tr> -->
                 </table>
             </section>
         </div>
