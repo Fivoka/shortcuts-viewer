@@ -1,5 +1,5 @@
 /* Filter bar & shortcuts list */
-#filterBarSection, tr {
+#SECTION_filterBar, tr {
     display: grid;
     grid-template-areas: "a b c d e f g";
     grid-template-columns: 35px 4fr 5fr 5fr 10fr 10fr 10fr;

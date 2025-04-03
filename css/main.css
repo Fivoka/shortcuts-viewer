@@ -3,19 +3,19 @@ body {
     height: 100vh;
     margin: 0;
 
-    display: flex;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c c"
+        "d d";
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: auto 1fr;
 }
 
+/* Keyboard & mouse display */
+#SECTION_keyboardMouseDisplay {
+    grid-area: a;
 
-/* Display & settings */
-#displaySections {
-    width: fit-content;
-
-    display: flex;
-    flex-direction: column;
-}
-
-#keyboardMouseDisplaySection {
     height: fit-content;
     padding: 15px;
 
@@ -26,25 +26,26 @@ body {
     background-color: lightpink;
 }
 
-#displaySettingsSection {
+/* Display settings */
+#SECTION_displaySettings {
+    grid-area: b;
+
     flex: 1;
     background-color: aquamarine;
 }
 
+/* Filter bar */
+#SECTION_filterBar {
+    grid-area: c;
 
-/* Filters & shortcuts list */
-#shortcutsSections {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-#filterBarSection {
     display: flex;
     background-color: lightsteelblue;
 }
 
-#shortcutsListSection {
+/* Shortcuts list */
+#SECTION_shortcutsList {
+    grid-area: d;
+
     flex: 1;
     background-color: lightgreen;
 }

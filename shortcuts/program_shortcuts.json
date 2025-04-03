@@ -2,7 +2,7 @@
     "shortcuts": [
         {
             "toggle_modifier": {
-                "held_modifiers": [ "Ctrl" ],
+                "held_modifiers": [ "Ctrl", "Alt" ],
                 "trigger_input": "75"
             },
             "held_modifiers": [ "Ctrl", "Shift", "Alt" ],
@@ -21,13 +21,14 @@
         {
             "toggle_modifier": null,
             "held_modifiers": [ "Ctrl", "Alt" ],
-            "trigger_input": "65",
+            "trigger_input": "mouse_wheel_down",
             "state_conditions": [
                 "scene:scene5",
                 "mode:mode1"
             ],
             "low_conditions": [
-                "selecting:element_type"
+                "selecting:element_type",
+                "focusing:element3"
             ],
             "description": "shortcuts that does a thing 2"
         }
