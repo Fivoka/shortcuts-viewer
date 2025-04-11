@@ -18,6 +18,8 @@
     width: calc(var(--key-side-length) - var(--key-border-width) * 2);
     height: calc(var(--key-side-length) - var(--key-border-width) * 2);
     border-width: var(--key-border-width);
+
+    overflow: hidden;
 }
 
 .displayRow {

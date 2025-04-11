@@ -1,19 +1,15 @@
-/* Temp */
-/* #functionKeys, #numpadKeys { opacity: 25%; } */
-
-
-/* Display styling */
+/* Input display styling */
 
 /* Input display */
 #inputDisplay {
-    --key-side-length: 28px;
+    --key-side-length: 35px;
     --key-gap: 1px;
 
     --display-area-gap: 8px;
     --display-area-padding: 5px;
 }
 
-/* Display area */
+/* Display areas */
 .displayArea { background-color: antiquewhite; }
 #mouseInputs {
     border-top-left-radius: var(--key-side-length);
@@ -22,24 +18,45 @@
 
 
 /* Default key styling */
+#mouseWheelUp { border-radius: 50% 50% 0 0; }
+#mouseWheelDown { border-radius: 0 0 50% 50%; }
+
 .displayInput {
-    --key-border-width: 2px;
+    --key-border-width: 3px;
     border-style: solid;
+
+    /* Default text styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: calc(var(--key-side-length) / 2);
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
+.smallText { font-size: calc(var(--key-side-length) / 3); }
 
 .triggerInput {
     border-color: rgb(31, 21, 119);
     background-color: royalblue;
+    color: rgb(124, 161, 240);
 }
 
 .modifierKey {
     border-color: rgb(146, 39, 66);
     background-color: rgb(230, 87, 122);
+    color: rgb(233, 175, 175);
 }
 
 .unavailableKey {
     border-color: rgb(71, 71, 71);
     background-color: gray;
+    color: rgb(173, 173, 173);
 }
 
 
@@ -47,11 +64,13 @@
 .triggerInput:hover {
     border-color: royalblue;
     background-color: rgb(31, 21, 119);
+    color: rgb(86, 120, 194);
 }
 
 .modifierKey:hover {
     border-color: rgb(207, 59, 72);
-    background-color: rgb(160, 37, 58);
+    background-color: rgb(129, 28, 45);
+    color: rgb(216, 98, 98);
 }
 
 
@@ -59,9 +78,11 @@
 .triggerInput.highlightedKey {
     border-color: rgb(84, 118, 212);
     background-color: rgb(163, 201, 243);
+    color: rgb(84, 118, 212);
 }
 
 .modifierKey.highlightedKey {
     border-color: rgb(196, 56, 91);
     background-color: rgb(252, 176, 195);
+    color: rgb(196, 56, 91);
 }

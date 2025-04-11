@@ -1,21 +1,6 @@
-import { highlightKeys, resetHighlightedKeys } from "./displayHandler.js";
+import { fetchJSON, keyboardLayoutObj } from "../main.js";
+import { highlightKeys, resetHighlightedKeys } from "./inputDisplayHandler.js";
 
-
-async function fetchJSON(url) {
-
-    try {
-        const response = await fetch(url, { mode: "no-cors" });
-        if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-        }
-
-        const json = await response.json();
-        return json;
-
-    } catch (error) {
-        console.error(error.message);
-    }
-}
 
 function camelize(str) {
     return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function(match, chr) {
@@ -43,7 +28,7 @@ function jsonKeyToElementId(key) {
     if (isNaN(key)) {
         return camelize(key);
     } else {
-        return "keycode_" + key;        
+        return "keycode_" + key;
     }
 }
 
@@ -89,9 +74,6 @@ async function formatAndAddShortcuts() {
     // Fetch shortcuts JSON file
     const shortcutsObj = await fetchJSON("shortcuts/program_shortcuts.json");
     const shortcutsList = shortcutsObj.shortcuts;
-
-    // Fetch keyboard layout JSON file
-    keyboardLayoutObj = await fetchJSON(`js/keyboardLayouts/${currentKeyboardLayout}.json`);
 
     // Add shortcuts to the list
     for (const shortcut of shortcutsList) {
@@ -187,8 +169,5 @@ async function formatAndAddShortcuts() {
 
 
 let loadedShortcutsCount = 0;
-let keyboardLayoutObj;
-
-let currentKeyboardLayout = "qwerty";
 
 export { formatAndAddShortcuts };
