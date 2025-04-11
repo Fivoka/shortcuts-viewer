@@ -20,7 +20,6 @@ function highlightKeys(elementIdsList) {
 function addInputDisplaySymbols() {
     const displayInputs = document.getElementsByClassName("displayInput");
     for (const element of displayInputs) {
-        if (element.id == "keycode_20") { console.log(keyboardLayoutObj.character[element.id]) }
         element.textContent = keyboardLayoutObj.character[element.id];
     }
 }
