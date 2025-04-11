@@ -19,7 +19,10 @@
             "description": "shortcuts that does a thing"
         },
         {
-            "toggle_modifier": null,
+            "toggle_modifier": {
+                "held_modifiers": null,
+                "trigger_input": null
+            },
             "held_modifiers": [ "Ctrl", "Alt" ],
             "trigger_input": "mouse_wheel_down",
             "state_conditions": [
@@ -31,6 +34,54 @@
                 "focusing:element3"
             ],
             "description": "shortcuts that does a thing 2"
+        },
+        {
+            "toggle_modifier": {
+                "held_modifiers": null,
+                "trigger_input": null
+            },
+            "held_modifiers": null,
+            "trigger_input": "83",
+            "state_conditions": null,
+            "low_conditions": null,
+            "description": "save map"
+        },
+        {
+            "toggle_modifier": { 
+                "held_modifiers": null,
+                "trigger_input": "75"
+            },
+            "held_modifiers": [ "Alt" ],
+            "trigger_input": "115",
+            "state_conditions": null,
+            "low_conditions": null,
+            "description": "enabl cheats"
+        },
+        {
+            "toggle_modifier": {
+                "held_modifiers": null,
+                "trigger_input": "mouse_button3"
+            },
+            "held_modifiers": [ "Ctrl", "Shift", "Alt" ],
+            "trigger_input": "192",
+            "state_conditions": null,
+            "low_conditions": [
+                "hovering:element1",
+                "hovering:element2",
+                "hovering:element3"
+            ],
+            "description": "last example shortcut"
+        },
+        {
+            "toggle_modifier": {
+                "held_modifiers": null,
+                "trigger_input": null
+            },
+            "held_modifiers": null,
+            "trigger_input": null,
+            "state_conditions": null,
+            "low_conditions": null,
+            "description": null
         }
-    ] 
+    ]
 }

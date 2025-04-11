@@ -1,11 +1,11 @@
 /* Temp */
-#functionKeys, #numpadKeys { opacity: 25%; }
+/* #functionKeys, #numpadKeys { opacity: 25%; } */
 
 
 /* Display styling */
 
-/* Keyboard & mouse display */
-#keyboardMouseDisplay {
+/* Input display */
+#inputDisplay {
     --key-side-length: 25px;
     --key-gap: 0px;
 
@@ -52,6 +52,18 @@
 
 .modifierKey:hover {
     border-style: dashed;
-    border-color: rgb(146, 103, 39);
-    background-color: rgb(230, 180, 87);
+    border-color: rgb(207, 59, 72);
+    background-color: rgb(160, 37, 58);
+}
+
+
+/* Highlighted key styling */
+.triggerInput.highlightedKey {
+    border-color: rgb(84, 118, 212);
+    background-color: rgb(117, 172, 236);
+}
+
+.modifierKey.highlightedKey {
+    border-color: rgb(196, 56, 91);
+    background-color: rgb(255, 132, 163);
 }

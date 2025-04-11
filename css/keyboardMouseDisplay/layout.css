@@ -1,5 +1,5 @@
-/* Keyboard & mouse display */
-#keyboardMouseDisplay {
+/* Input display */
+#inputDisplay {
     display: grid;
     grid-template-areas:
         "func nav .      ."
@@ -15,8 +15,8 @@
 .displayInput {
     --key-inner-side-length: calc(var(--key-side-length) - var(--key-border-width) * 2);
 
-    width: var(calc(var(--key-side-length) - var(--key-border-width) * 2));
-    height: var(calc(var(--key-side-length) - var(--key-border-width) * 2));
+    width: calc(var(--key-side-length) - var(--key-border-width) * 2);
+    height: calc(var(--key-side-length) - var(--key-border-width) * 2);
     border-width: var(--key-border-width);
 }
 

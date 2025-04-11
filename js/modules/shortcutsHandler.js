@@ -1,3 +1,6 @@
+import { highlightKeys, resetHighlightedKeys } from "./displayHandler.js";
+
+
 async function fetchJSON(url) {
 
     try {
@@ -14,8 +17,8 @@ async function fetchJSON(url) {
     }
 }
 
-
-function addToShortcutList(toggleModifier, heldModifiers, triggerInput, stateConditions, lowConditions, description) {
+function addToShortcutList(
+    toggleModifier, heldModifiers, triggerInput, stateConditions, lowConditions, description, elementIdsList) {
 
     // Create necessary elements
     const tableRow = document.createElement("tr");
@@ -27,7 +30,7 @@ function addToShortcutList(toggleModifier, heldModifiers, triggerInput, stateCon
     const rowData5 = document.createElement("td");
     const rowData6 = document.createElement("td");
 
-    // Add them to the DOM with the formatted content
+    // Add them to the row element with the formatted content
     tableRow.appendChild(rowHeader).textContent = ++loadedShortcutsCount;
 
     tableRow.appendChild(rowData1).textContent = toggleModifier;
@@ -37,10 +40,20 @@ function addToShortcutList(toggleModifier, heldModifiers, triggerInput, stateCon
     tableRow.appendChild(rowData5).textContent = lowConditions;
     tableRow.appendChild(rowData6).textContent = description;
 
+    // Attach event listeners to the row
+    tableRow.addEventListener("mouseenter", (e) => {
+        highlightKeys(elementIdsList);
+    });
+    tableRow.addEventListener("mouseleave", (e) => {
+        resetHighlightedKeys();
+    });
+
+    // Add the row to the DOM
     const shortcutsTable = document.getElementById("shortcutsList");
     shortcutsTable.appendChild(tableRow);
 }
 
+
 let loadedShortcutsCount = 0;
 
-export { fetchJSON, addToShortcutList };
+export { fetchJSON, addToShortcutList }
